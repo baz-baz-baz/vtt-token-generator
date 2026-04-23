@@ -1,7 +1,7 @@
 /* Optional: only works if you provide the font file */
 @font-face {
   font-family: "ScalaSans Caps";
-  src: url("./fonts/Scaly Sans Caps Bold Italic.otf") format("opentype");
+  src: url("./fonts/Scaly_Sans_Caps_Bold_Italic.otf") format("opentype");
   font-weight: bold;
   font-style: italic;
 }
