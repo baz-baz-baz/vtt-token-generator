@@ -121,7 +121,7 @@ async function removeBg() {
 
 function restoreOriginal() {
   if (!state.originalImage) {
-    setStatus("No original image to restore");
+    setStatus("No original imagdasde to restore");
     return;
   }
   state.image = state.originalImage;
