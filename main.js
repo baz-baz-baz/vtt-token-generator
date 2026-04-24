@@ -236,18 +236,11 @@ function drawInsideToken() {
   const { x, y, w, h } = getPlacement();
 
   ctx.save();
-
-  // only draw the inside-circle part BELOW the breakout line
-  ctx.beginPath();
-  ctx.rect(0, state.breakoutY, canvas.width, canvas.height - state.breakoutY);
-  ctx.clip();
-
   ctx.beginPath();
   ctx.arc(TOKEN.cx, TOKEN.cy, TOKEN.radius, 0, Math.PI * 2);
+  ctx.closePath();
   ctx.clip();
-
   ctx.drawImage(state.image, x, y, w, h);
-
   ctx.restore();
 }
 
